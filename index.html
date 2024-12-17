@@ -255,14 +255,14 @@
           placeholder="Search..."
           class="w-full px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
-        <button
+        <button id="search-box"
           onclick="handleSearch()"
           type="submit"
           class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-r-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           Search
         </button>
-      </form>
+      </div>
     </div>
     <!-- all phone show in this container -->
     <div
@@ -271,9 +271,9 @@
     >
       <!-- here we showed our spinner -->
       <div id="spinner"></div>
-      <!-- here we make our ophone card  -->
+      <!-- here we make our phone card  -->
 
-</div>
+  </div>
 
 <div class="text-center">
     <button onclick="handleShowAll()" class="btn  bg-red-500 mt-5">Show All</button>
@@ -281,6 +281,23 @@
 </div>
 
  <!-- show modal here  -->
+
+ <!-- Open the modal using ID.showModal() method -->
+
+<div id="modal-container">
+  <dialog id="my_modal_1" class="modal">
+    <div class="modal-box">
+      <h3 class="text-lg font-bold">Hello!</h3>
+      <p class="py-4">Press ESC key or click the button below to close</p>
+      <div class="modal-action">
+        <form method="dialog">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+</div>
 
 <!-- Open the modal using ID.showModal() method -->
 
